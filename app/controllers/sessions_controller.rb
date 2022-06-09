@@ -13,7 +13,7 @@ class SessionsController < ApplicationController
         flash["notice"] = "Welcome, #{@user["username"]}."
         redirect_to "/places"
       else
-        flash["notice"] = "Sorry, wrong password"
+        flash["notice"] = "Sorry, wrong password."
         redirect_to "/login"
       end
     else
