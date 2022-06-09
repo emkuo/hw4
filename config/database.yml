@@ -27,6 +27,6 @@ production:
   production:
   <<: *default
   adapter: postgresql
-  database: hw4_production_test
-  username: hw4testaccount
-  password: <%= ENV["HW4TESTACCOUNT_DATABASE_PASSWORD"] %>
+  database: my_app_production
+  username: emkuo
+  password: <%= ENV["EMKUO_DATABASE_PASSWORD"] %>
